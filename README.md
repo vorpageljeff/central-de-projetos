@@ -1,8 +1,73 @@
 # Central de projetos — Jefferson Vorpagel
 
-Inventário atualizado em **23/10/2026**. Reúne os projetos encontrados no GitHub, na Vercel e nas pastas locais consultadas. Não representa garantia de que todo o histórico foi recuperado.
+Código-fonte e acervo organizados em **23/10/2026**.
 
-## Repositórios GitHub
+## Códigos locais publicados
+
+| Projeto | Acessar fonte | Arquivos do acervo |
+|---|---|---|
+| innovagro-360 | [Código — acervo-local-20261023](https://github.com/vorpageljeff/innovagro-360/tree/acervo-local-20261023) | 108 |
+| transboes-codigo | [Código — main](https://github.com/vorpageljeff/transboes-codigo/tree/main) | 169 |
+| techa-backend | [Código — acervo-local-20261023](https://github.com/vorpageljeff/techa-backend/tree/acervo-local-20261023) | 114 |
+| app_mobile_techa | [Código — main](https://github.com/vorpageljeff/app_mobile_techa/tree/main) | 98 |
+| techa-web-legado | [Código — main](https://github.com/vorpageljeff/techa-web-legado/tree/main) | 11 |
+| voragon | [Código — main](https://github.com/vorpageljeff/voragon/tree/main) | 34 |
+| voragon-instagram | [Código — main](https://github.com/vorpageljeff/voragon-instagram/tree/main) | 7 |
+| lumino-voragon | [Código — main](https://github.com/vorpageljeff/lumino-voragon/tree/main) | 13 |
+| blend-wine | [Código — main](https://github.com/vorpageljeff/blend-wine/tree/main) | 16 |
+| corpo-culto | [Código — main](https://github.com/vorpageljeff/corpo-culto/tree/main) | 6 |
+| agenda-voz | [Código — main](https://github.com/vorpageljeff/agenda-voz/tree/main) | 11 |
+| editor-local | [Código — main](https://github.com/vorpageljeff/editor-local/tree/main) | 2 |
+| satirinhas-ia | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/satirinhas-ia) | 15 |
+| impulso-academy | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/impulso-academy) | 1 |
+| bpmn-scripts | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/bpmn-scripts) | 3 |
+| techa-acervo-20260909 | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/techa-acervo-20260909) | 107 |
+
+As branches `acervo-local-20261023` preservam mudanças locais de InnovAgro e Techá sem substituir a main. Os demais destinos acima usam main. Editor Local inclui duas variantes adicionais.
+
+## Todos os repositórios
+
+### Aplicativos pessoais
+
+| Projeto | Descrição | Visibilidade |
+|---|---|---|
+| [agenda-voz](https://github.com/vorpageljeff/agenda-voz) | App macOS SwiftUI para ditar compromissos | public |
+| [editor-local](https://github.com/vorpageljeff/editor-local) | Editor de texto HTML local e suas variantes | public |
+| [viagem-jj](https://github.com/vorpageljeff/viagem-jj) | Bora!: gestão de viagens, participantes, cenários e despesas | public |
+
+### Agronegócio
+
+| Projeto | Descrição | Visibilidade |
+|---|---|---|
+| [agrovision](https://github.com/vorpageljeff/agrovision) | FastAPI, chat e visão computacional com material didático | public |
+| [agrovision_adsA](https://github.com/vorpageljeff/agrovision_adsA) | Repositório sem conteúdo listado na coleta | public |
+| [app_mobile_techa](https://github.com/vorpageljeff/app_mobile_techa) | Base canônica recuperada do aplicativo Techá, publicada na main | public |
+| [innovagro-360](https://github.com/vorpageljeff/innovagro-360) | CRM, projetos, financeiro e gestão; Next.js e FastAPI | public |
+| [techa-backend](https://github.com/vorpageljeff/techa-backend) | API FastAPI para plataforma Techá com processamento geoespacial | public |
+| [techa-web-legado](https://github.com/vorpageljeff/techa-web-legado) | Versão web legada recuperada do Techá | public |
+
+### Aplicativos e IA
+
+| Projeto | Descrição | Visibilidade |
+|---|---|---|
+| [Assistente_de_Compras](https://github.com/vorpageljeff/Assistente_de_Compras) | Aplicativo Flutter com integração a modelo de linguagem para recomendações de compras | public |
+| [voragon-instagram](https://github.com/vorpageljeff/voragon-instagram) | Webhook de notificações do Instagram | public |
+
+### Sites e marcas
+
+| Projeto | Descrição | Visibilidade |
+|---|---|---|
+| [blend-wine](https://github.com/vorpageljeff/blend-wine) | Demonstração de catálogo Blend Wine | public |
+| [brand-safari](https://github.com/vorpageljeff/brand-safari) | Aplicação React e Vite | public |
+| [corpo-culto](https://github.com/vorpageljeff/corpo-culto) | Demonstração estática Corpo Culto | public |
+| [lumino-voragon](https://github.com/vorpageljeff/lumino-voragon) | Demonstração estática Lumino | public |
+| [voragon](https://github.com/vorpageljeff/voragon) | Site institucional Voragon | public |
+
+### Catálogo
+
+| Projeto | Descrição | Visibilidade |
+|---|---|---|
+| [central-de-projetos](https://github.com/vorpageljeff/central-de-projetos) | Catálogo geral e códigos agrupados do acervo | public |
 
 ### Infraestrutura
 
@@ -10,92 +75,64 @@ Inventário atualizado em **23/10/2026**. Reúne os projetos encontrados no GitH
 |---|---|---|
 | [docker](https://github.com/vorpageljeff/docker) | Docker Compose e configuração do Prometheus | public |
 
-### Estudos e entregas
-
-| Projeto | Descrição | Visibilidade |
-|---|---|---|
-| [Entregaconversor](https://github.com/vorpageljeff/Entregaconversor) | Repositório com somente README na branch principal; código não localizado | public |
-| [reservas-salas-microservices](https://github.com/vorpageljeff/reservas-salas-microservices) | README descreve o Projeto Integrador Ambiente-se; nome e documentação precisam ser conciliados | public |
-| [Lista_de_Compras_com_Checklists_Requisitos](https://github.com/vorpageljeff/Lista_de_Compras_com_Checklists_Requisitos) | Repositório com somente README na branch principal; código não localizado | public |
-| [Entrega_Prf_Alan](https://github.com/vorpageljeff/Entrega_Prf_Alan) | Repositório com somente README na branch principal; código não localizado | public |
-| [tradutor-profvini](https://github.com/vorpageljeff/tradutor-profvini) | Repositório com somente README na branch principal; código não localizado | public |
-
-### Aplicativos e IA
-
-| Projeto | Descrição | Visibilidade |
-|---|---|---|
-| [Assistente_de_Compras](https://github.com/vorpageljeff/Assistente_de_Compras) | Aplicativo Flutter com integração a modelo de linguagem para recomendações de compras | public |
-
-### Agronegócio
-
-| Projeto | Descrição | Visibilidade |
-|---|---|---|
-| [agrovision_adsA](https://github.com/vorpageljeff/agrovision_adsA) | Repositório sem conteúdo listado na coleta | public |
-| [agrovision](https://github.com/vorpageljeff/agrovision) | FastAPI, chat e visão computacional com material didático | public |
-| [techa-backend](https://github.com/vorpageljeff/techa-backend) | API FastAPI para plataforma Techá com processamento geoespacial | public |
-| [app_mobile_techa](https://github.com/vorpageljeff/app_mobile_techa) | Repositório sem conteúdo listado na coleta; não confundir com aplicação publicada | public |
-| [innovagro-360](https://github.com/vorpageljeff/innovagro-360) | CRM, projetos, financeiro e gestão; Next.js e FastAPI | public |
-
-### Sites e marcas
-
-| Projeto | Descrição | Visibilidade |
-|---|---|---|
-| [brand-safari](https://github.com/vorpageljeff/brand-safari) | Aplicação React e Vite | public |
-
 ### Gestão e operações
 
 | Projeto | Descrição | Visibilidade |
 |---|---|---|
+| [dr-performance-platform](https://github.com/vorpageljeff/dr-performance-platform) | Plataforma com Next.js, Fastify, PostgreSQL e Drizzle | public |
 | [maxicon_ai_portal_template](https://github.com/vorpageljeff/maxicon_ai_portal_template) | Repositório sem conteúdo listado; versão com código em Portal-inteligente-de-projetos-maxicon_ai_portal_template | public |
 | [Portal-inteligente-de-projetos-maxicon_ai_portal_template](https://github.com/vorpageljeff/Portal-inteligente-de-projetos-maxicon_ai_portal_template) | Gestão de projetos, horas, riscos e LPN com IA; FastAPI, Next.js e Flutter | public |
-| [dr-performance-platform](https://github.com/vorpageljeff/dr-performance-platform) | Plataforma com Next.js, Fastify, PostgreSQL e Drizzle | private |
-| [Transboes_portal_mobile](https://github.com/vorpageljeff/Transboes_portal_mobile) | Gestão operacional de fretes com Next.js, FastAPI e PostgreSQL | private |
+| [transboes-codigo](https://github.com/vorpageljeff/transboes-codigo) | Fonte do Trans Boes sem capturas e documentos operacionais | public |
+| [Transboes_portal_mobile](https://github.com/vorpageljeff/Transboes_portal_mobile) | Acervo original privado com documentos operacionais; fonte pública em transboes-codigo | private |
 
-### Aplicativos pessoais
+### Estudos e entregas
 
 | Projeto | Descrição | Visibilidade |
 |---|---|---|
-| [viagem-jj](https://github.com/vorpageljeff/viagem-jj) | Bora!: gestão de viagens, participantes, cenários e despesas | private |
+| [Entregaconversor](https://github.com/vorpageljeff/Entregaconversor) | Conversor Flutter: fonte recuperada da master na main | public |
+| [Entrega_Prf_Alan](https://github.com/vorpageljeff/Entrega_Prf_Alan) | Referência ao submódulo ReservasMS; origem e código ainda não recuperados | public |
+| [Lista_de_Compras_com_Checklists_Requisitos](https://github.com/vorpageljeff/Lista_de_Compras_com_Checklists_Requisitos) | Lista de compras Flutter: fonte recuperada da master na main | public |
+| [reservas-salas-microservices](https://github.com/vorpageljeff/reservas-salas-microservices) | README descreve o Projeto Integrador Ambiente-se; nome e documentação precisam ser conciliados | public |
+| [tradutor-profvini](https://github.com/vorpageljeff/tradutor-profvini) | Sistema de tradução: fonte recuperada da master na main, sem node_modules | public |
 
-## Publicações na Vercel
+## Código recuperado das branches antigas
 
-As associações abaixo são correspondências de inventário, não confirmação do vínculo Git configurado no deployment.
+- [Conversor](https://github.com/vorpageljeff/Entregaconversor): 130 arquivos recuperados da master.
+- [Lista de Compras](https://github.com/vorpageljeff/Lista_de_Compras_com_Checklists_Requisitos): cinco arquivos recuperados da master.
+- [Tradutor](https://github.com/vorpageljeff/tradutor-profvini): 27 arquivos recuperados da master, excluindo dependências instaladas.
 
-| Projeto Vercel | Repositório correspondente | Pasta local identificada |
-|---|---|---|
-| voragon | A identificar | Voragon_Site |
-| voragon-instagram | A identificar | Voragon_Instagram |
-| innovagro-360 | [innovagro-360](https://github.com/vorpageljeff/innovagro-360) | 360_CRM_Gestao |
-| techa-mobile-web | A identificar | Projeto_techa |
-| mobile | A identificar | Projeto_techa |
-| lumino-voragon | A identificar | Não localizada |
-| blend-wine | A identificar | Não localizada |
-| corpo-culto | A identificar | Não localizada |
-| transboes | [Transboes_portal_mobile](https://github.com/vorpageljeff/Transboes_portal_mobile) | Transboes_portal_mobile |
-| techa-admin-portal | A identificar | Projeto_techa |
-| portal-inteligente-de-projetos-maxicon-ai-portal-template | [Portal-inteligente-de-projetos-maxicon_ai_portal_template](https://github.com/vorpageljeff/Portal-inteligente-de-projetos-maxicon_ai_portal_template) | Não localizada |
-| viagem-jj | [viagem-jj](https://github.com/vorpageljeff/viagem-jj) | Não localizada |
-| sil-sommelier | A identificar | Não localizada |
-| jefferson-vorpagel-ai | A identificar | Não localizada |
-| brand-safari | [brand-safari](https://github.com/vorpageljeff/brand-safari) | Não localizada |
-| luiza-reis-terapeuta-floral | A identificar | Não localizada |
+As branches originais e seus históricos foram preservados.
 
-## Outros projetos e materiais locais
+## Publicações Vercel e fontes correspondentes
 
-- **agenda-voz**: Aplicativo macOS SwiftUI para ditar compromissos e salvar no Calendário.
-- **EditorLocal / EditorLocal 2 / EditorLocal.html**: Editor local; variantes a comparar.
-- **Voragon_Comercial**: Material comercial; conteúdo a revisar antes de versionar.
-- **Voragon_Videos**: Material audiovisual; conteúdo a revisar antes de versionar.
-- **satirinhas_ia**: Pasta local; finalidade e arquivos a revisar.
+Associações por inventário de fontes, sem alteração ou confirmação do vínculo Git dos deployments.
 
-## Pendências de consolidação
+| Projeto Vercel | Fonte correspondente |
+|---|---|
+| voragon | [voragon](https://github.com/vorpageljeff/voragon) |
+| voragon-instagram | [voragon-instagram](https://github.com/vorpageljeff/voragon-instagram) |
+| innovagro-360 | [innovagro-360](https://github.com/vorpageljeff/innovagro-360) |
+| techa-mobile-web | [app_mobile_techa](https://github.com/vorpageljeff/app_mobile_techa) |
+| mobile | [techa-web-legado](https://github.com/vorpageljeff/techa-web-legado) |
+| lumino-voragon | [lumino-voragon](https://github.com/vorpageljeff/lumino-voragon) |
+| blend-wine | [blend-wine](https://github.com/vorpageljeff/blend-wine) |
+| corpo-culto | [corpo-culto](https://github.com/vorpageljeff/corpo-culto) |
+| transboes | [transboes-codigo](https://github.com/vorpageljeff/transboes-codigo) |
+| techa-admin-portal | [app_mobile_techa](https://github.com/vorpageljeff/app_mobile_techa) |
+| portal-inteligente-de-projetos-maxicon-ai-portal-template | [Portal-inteligente-de-projetos-maxicon_ai_portal_template](https://github.com/vorpageljeff/Portal-inteligente-de-projetos-maxicon_ai_portal_template) |
+| viagem-jj | [viagem-jj](https://github.com/vorpageljeff/viagem-jj) |
+| sil-sommelier | Não localizada |
+| jefferson-vorpagel-ai | Não localizada |
+| brand-safari | [brand-safari](https://github.com/vorpageljeff/brand-safari) |
+| luiza-reis-terapeuta-floral | Não localizada |
 
-- Identificar e importar fontes dos projetos Vercel sem repositório correspondente.
-- Recuperar código de quatro repositórios com somente README e avaliar três repositórios vazios.
-- Conciliar nome reservas-salas-microservices com README Ambiente-se.
-- Comparar mobile e techa-mobile-web antes de consolidar.
-- Revisar conteúdo local antes de publicar arquivos; preservar visibilidade privada.
+## Cuidados e pendências
 
-## Manutenção
+- Revogar a chave Google que estava no histórico de Assistente_de_Compras; a versão atual usa configuração externa.
+- Recuperar a origem do submódulo ReservasMS em Entrega_Prf_Alan.
+- Identificar fontes de sil-sommelier, jefferson-vorpagel-ai e luiza-reis-terapeuta-floral, não localizadas nos arquivos consultados.
+- Transboes_portal_mobile permanece privado para preservar documentos operacionais; código público em transboes-codigo.
 
-Para cada novo projeto, registrar objetivo, repositório, visibilidade, tecnologias, instruções de execução e publicação. Uma publicação pronta na Vercel não comprova que o código está versionado no GitHub. Verificar código e histórico antes de excluir, renomear ou arquivar repositórios.
+Credenciais, arquivos de ambiente locais, sessões do navegador, bancos, dumps e dados de prospecção não integram as novas publicações. Foi feita inspeção de fontes e histórico com padrões de credenciais; ela não garante ausência de todas as vulnerabilidades. As aplicações não foram compiladas ou testadas funcionalmente nesta publicação de acervo.
+
+O GitHub limitou temporariamente a criação de novos repositórios. Os quatro últimos conjuntos de fontes foram organizados em `codigos/` desta central para manter todo o acervo revisado acessível.

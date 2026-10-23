@@ -1,70 +1,14 @@
 {
   "data": "2026-10-23",
   "conta": "vorpageljeff",
-  "escopo": "Inventário dos repositórios acessíveis, 16 projetos Vercel consultados nesta sessão e pastas em Documents. Não é garantia de cobertura de todo o histórico.",
+  "escopo": "Acervo encontrado em Documents e em todas as branches dos repositórios GitHub acessíveis. Arquivos privados, credenciais, sessões e backups de dados excluídos. Publicação de fontes, sem validar funcionamento dos aplicativos.",
   "repositorios": [
     {
-      "nome": "docker",
-      "url": "https://github.com/vorpageljeff/docker",
+      "nome": "agenda-voz",
+      "url": "https://github.com/vorpageljeff/agenda-voz",
       "visibilidade": "public",
-      "categoria": "Infraestrutura",
-      "resumo": "Docker Compose e configuração do Prometheus",
-      "branch": "main"
-    },
-    {
-      "nome": "Entregaconversor",
-      "url": "https://github.com/vorpageljeff/Entregaconversor",
-      "visibilidade": "public",
-      "categoria": "Estudos e entregas",
-      "resumo": "Repositório com somente README na branch principal; código não localizado",
-      "branch": "main"
-    },
-    {
-      "nome": "reservas-salas-microservices",
-      "url": "https://github.com/vorpageljeff/reservas-salas-microservices",
-      "visibilidade": "public",
-      "categoria": "Estudos e entregas",
-      "resumo": "README descreve o Projeto Integrador Ambiente-se; nome e documentação precisam ser conciliados",
-      "branch": "main"
-    },
-    {
-      "nome": "Lista_de_Compras_com_Checklists_Requisitos",
-      "url": "https://github.com/vorpageljeff/Lista_de_Compras_com_Checklists_Requisitos",
-      "visibilidade": "public",
-      "categoria": "Estudos e entregas",
-      "resumo": "Repositório com somente README na branch principal; código não localizado",
-      "branch": "main"
-    },
-    {
-      "nome": "Assistente_de_Compras",
-      "url": "https://github.com/vorpageljeff/Assistente_de_Compras",
-      "visibilidade": "public",
-      "categoria": "Aplicativos e IA",
-      "resumo": "Aplicativo Flutter com integração a modelo de linguagem para recomendações de compras",
-      "branch": "main"
-    },
-    {
-      "nome": "Entrega_Prf_Alan",
-      "url": "https://github.com/vorpageljeff/Entrega_Prf_Alan",
-      "visibilidade": "public",
-      "categoria": "Estudos e entregas",
-      "resumo": "Repositório com somente README na branch principal; código não localizado",
-      "branch": "main"
-    },
-    {
-      "nome": "tradutor-profvini",
-      "url": "https://github.com/vorpageljeff/tradutor-profvini",
-      "visibilidade": "public",
-      "categoria": "Estudos e entregas",
-      "resumo": "Repositório com somente README na branch principal; código não localizado",
-      "branch": "main"
-    },
-    {
-      "nome": "agrovision_adsA",
-      "url": "https://github.com/vorpageljeff/agrovision_adsA",
-      "visibilidade": "public",
-      "categoria": "Agronegócio",
-      "resumo": "Repositório sem conteúdo listado na coleta",
+      "categoria": "Aplicativos pessoais",
+      "resumo": "App macOS SwiftUI para ditar compromissos",
       "branch": "main"
     },
     {
@@ -76,6 +20,38 @@
       "branch": "main"
     },
     {
+      "nome": "agrovision_adsA",
+      "url": "https://github.com/vorpageljeff/agrovision_adsA",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "Repositório sem conteúdo listado na coleta",
+      "branch": "main"
+    },
+    {
+      "nome": "app_mobile_techa",
+      "url": "https://github.com/vorpageljeff/app_mobile_techa",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "Base canônica recuperada do aplicativo Techá, publicada na main",
+      "branch": "main"
+    },
+    {
+      "nome": "Assistente_de_Compras",
+      "url": "https://github.com/vorpageljeff/Assistente_de_Compras",
+      "visibilidade": "public",
+      "categoria": "Aplicativos e IA",
+      "resumo": "Aplicativo Flutter com integração a modelo de linguagem para recomendações de compras",
+      "branch": "main"
+    },
+    {
+      "nome": "blend-wine",
+      "url": "https://github.com/vorpageljeff/blend-wine",
+      "visibilidade": "public",
+      "categoria": "Sites e marcas",
+      "resumo": "Demonstração de catálogo Blend Wine",
+      "branch": "main"
+    },
+    {
       "nome": "brand-safari",
       "url": "https://github.com/vorpageljeff/brand-safari",
       "visibilidade": "public",
@@ -84,19 +60,83 @@
       "branch": "main"
     },
     {
-      "nome": "techa-backend",
-      "url": "https://github.com/vorpageljeff/techa-backend",
+      "nome": "central-de-projetos",
+      "url": "https://github.com/vorpageljeff/central-de-projetos",
       "visibilidade": "public",
-      "categoria": "Agronegócio",
-      "resumo": "API FastAPI para plataforma Techá com processamento geoespacial",
+      "categoria": "Catálogo",
+      "resumo": "Catálogo geral e códigos agrupados do acervo",
       "branch": "main"
     },
     {
-      "nome": "app_mobile_techa",
-      "url": "https://github.com/vorpageljeff/app_mobile_techa",
+      "nome": "corpo-culto",
+      "url": "https://github.com/vorpageljeff/corpo-culto",
+      "visibilidade": "public",
+      "categoria": "Sites e marcas",
+      "resumo": "Demonstração estática Corpo Culto",
+      "branch": "main"
+    },
+    {
+      "nome": "docker",
+      "url": "https://github.com/vorpageljeff/docker",
+      "visibilidade": "public",
+      "categoria": "Infraestrutura",
+      "resumo": "Docker Compose e configuração do Prometheus",
+      "branch": "main"
+    },
+    {
+      "nome": "dr-performance-platform",
+      "url": "https://github.com/vorpageljeff/dr-performance-platform",
+      "visibilidade": "public",
+      "categoria": "Gestão e operações",
+      "resumo": "Plataforma com Next.js, Fastify, PostgreSQL e Drizzle",
+      "branch": "main"
+    },
+    {
+      "nome": "editor-local",
+      "url": "https://github.com/vorpageljeff/editor-local",
+      "visibilidade": "public",
+      "categoria": "Aplicativos pessoais",
+      "resumo": "Editor de texto HTML local e suas variantes",
+      "branch": "main"
+    },
+    {
+      "nome": "Entregaconversor",
+      "url": "https://github.com/vorpageljeff/Entregaconversor",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Conversor Flutter: fonte recuperada da master na main",
+      "branch": "main"
+    },
+    {
+      "nome": "Entrega_Prf_Alan",
+      "url": "https://github.com/vorpageljeff/Entrega_Prf_Alan",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Referência ao submódulo ReservasMS; origem e código ainda não recuperados",
+      "branch": "main"
+    },
+    {
+      "nome": "innovagro-360",
+      "url": "https://github.com/vorpageljeff/innovagro-360",
       "visibilidade": "public",
       "categoria": "Agronegócio",
-      "resumo": "Repositório sem conteúdo listado na coleta; não confundir com aplicação publicada",
+      "resumo": "CRM, projetos, financeiro e gestão; Next.js e FastAPI",
+      "branch": "main"
+    },
+    {
+      "nome": "Lista_de_Compras_com_Checklists_Requisitos",
+      "url": "https://github.com/vorpageljeff/Lista_de_Compras_com_Checklists_Requisitos",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Lista de compras Flutter: fonte recuperada da master na main",
+      "branch": "main"
+    },
+    {
+      "nome": "lumino-voragon",
+      "url": "https://github.com/vorpageljeff/lumino-voragon",
+      "visibilidade": "public",
+      "categoria": "Sites e marcas",
+      "resumo": "Demonstração estática Lumino",
       "branch": "main"
     },
     {
@@ -116,19 +156,43 @@
       "branch": "main"
     },
     {
-      "nome": "viagem-jj",
-      "url": "https://github.com/vorpageljeff/viagem-jj",
-      "visibilidade": "private",
-      "categoria": "Aplicativos pessoais",
-      "resumo": "Bora!: gestão de viagens, participantes, cenários e despesas",
+      "nome": "reservas-salas-microservices",
+      "url": "https://github.com/vorpageljeff/reservas-salas-microservices",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "README descreve o Projeto Integrador Ambiente-se; nome e documentação precisam ser conciliados",
       "branch": "main"
     },
     {
-      "nome": "dr-performance-platform",
-      "url": "https://github.com/vorpageljeff/dr-performance-platform",
-      "visibilidade": "private",
+      "nome": "techa-backend",
+      "url": "https://github.com/vorpageljeff/techa-backend",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "API FastAPI para plataforma Techá com processamento geoespacial",
+      "branch": "main"
+    },
+    {
+      "nome": "techa-web-legado",
+      "url": "https://github.com/vorpageljeff/techa-web-legado",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "Versão web legada recuperada do Techá",
+      "branch": "main"
+    },
+    {
+      "nome": "tradutor-profvini",
+      "url": "https://github.com/vorpageljeff/tradutor-profvini",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Sistema de tradução: fonte recuperada da master na main, sem node_modules",
+      "branch": "main"
+    },
+    {
+      "nome": "transboes-codigo",
+      "url": "https://github.com/vorpageljeff/transboes-codigo",
+      "visibilidade": "public",
       "categoria": "Gestão e operações",
-      "resumo": "Plataforma com Next.js, Fastify, PostgreSQL e Drizzle",
+      "resumo": "Fonte do Trans Boes sem capturas e documentos operacionais",
       "branch": "main"
     },
     {
@@ -136,28 +200,44 @@
       "url": "https://github.com/vorpageljeff/Transboes_portal_mobile",
       "visibilidade": "private",
       "categoria": "Gestão e operações",
-      "resumo": "Gestão operacional de fretes com Next.js, FastAPI e PostgreSQL",
+      "resumo": "Acervo original privado com documentos operacionais; fonte pública em transboes-codigo",
       "branch": "main"
     },
     {
-      "nome": "innovagro-360",
-      "url": "https://github.com/vorpageljeff/innovagro-360",
+      "nome": "viagem-jj",
+      "url": "https://github.com/vorpageljeff/viagem-jj",
       "visibilidade": "public",
-      "categoria": "Agronegócio",
-      "resumo": "CRM, projetos, financeiro e gestão; Next.js e FastAPI",
+      "categoria": "Aplicativos pessoais",
+      "resumo": "Bora!: gestão de viagens, participantes, cenários e despesas",
+      "branch": "main"
+    },
+    {
+      "nome": "voragon",
+      "url": "https://github.com/vorpageljeff/voragon",
+      "visibilidade": "public",
+      "categoria": "Sites e marcas",
+      "resumo": "Site institucional Voragon",
+      "branch": "main"
+    },
+    {
+      "nome": "voragon-instagram",
+      "url": "https://github.com/vorpageljeff/voragon-instagram",
+      "visibilidade": "public",
+      "categoria": "Aplicativos e IA",
+      "resumo": "Webhook de notificações do Instagram",
       "branch": "main"
     }
   ],
   "vercel": [
     {
       "nome": "voragon",
-      "repo": null,
+      "repo": "voragon",
       "pasta": "Voragon_Site",
       "associacao": "Repositório correspondente não identificado"
     },
     {
       "nome": "voragon-instagram",
-      "repo": null,
+      "repo": "voragon-instagram",
       "pasta": "Voragon_Instagram",
       "associacao": "Repositório correspondente não identificado"
     },
@@ -169,43 +249,43 @@
     },
     {
       "nome": "techa-mobile-web",
-      "repo": null,
+      "repo": "app_mobile_techa",
       "pasta": "Projeto_techa",
       "associacao": "Repositório correspondente não identificado"
     },
     {
       "nome": "mobile",
-      "repo": null,
+      "repo": "techa-web-legado",
       "pasta": "Projeto_techa",
       "associacao": "Repositório correspondente não identificado"
     },
     {
       "nome": "lumino-voragon",
-      "repo": null,
+      "repo": "lumino-voragon",
       "pasta": null,
       "associacao": "Repositório correspondente não identificado"
     },
     {
       "nome": "blend-wine",
-      "repo": null,
+      "repo": "blend-wine",
       "pasta": null,
       "associacao": "Repositório correspondente não identificado"
     },
     {
       "nome": "corpo-culto",
-      "repo": null,
+      "repo": "corpo-culto",
       "pasta": null,
       "associacao": "Repositório correspondente não identificado"
     },
     {
       "nome": "transboes",
-      "repo": "Transboes_portal_mobile",
+      "repo": "transboes-codigo",
       "pasta": "Transboes_portal_mobile",
       "associacao": "Correspondência por nome e documentação; vínculo Git da Vercel não confirmado"
     },
     {
       "nome": "techa-admin-portal",
-      "repo": null,
+      "repo": "app_mobile_techa",
       "pasta": "Projeto_techa",
       "associacao": "Repositório correspondente não identificado"
     },
@@ -269,10 +349,109 @@
     }
   ],
   "pendencias": [
-    "Identificar e importar fontes dos projetos Vercel sem repositório correspondente.",
-    "Recuperar código de quatro repositórios com somente README e avaliar três repositórios vazios.",
-    "Conciliar nome reservas-salas-microservices com README Ambiente-se.",
-    "Comparar mobile e techa-mobile-web antes de consolidar.",
-    "Revisar conteúdo local antes de publicar arquivos; preservar visibilidade privada."
+    "Revogar a chave Google que estava no histórico de Assistente_de_Compras; a versão atual usa configuração externa.",
+    "Recuperar a origem do submódulo ReservasMS em Entrega_Prf_Alan.",
+    "Identificar fontes de sil-sommelier, jefferson-vorpagel-ai e luiza-reis-terapeuta-floral, não localizadas nos arquivos consultados.",
+    "Transboes_portal_mobile permanece privado para preservar documentos operacionais; código público em transboes-codigo."
+  ],
+  "publicacoes_locais": [
+    {
+      "repo": "innovagro-360",
+      "branch": "acervo-local-20261023",
+      "sha": "8ac4cb6f4820f9a662f6778a0b9820d3fdfa6e58",
+      "files": 108
+    },
+    {
+      "repo": "transboes-codigo",
+      "branch": "main",
+      "sha": "541b1ad0fcd88fa638b4520b8abd6d7a29efae10",
+      "files": 169
+    },
+    {
+      "repo": "techa-backend",
+      "branch": "acervo-local-20261023",
+      "sha": "7f23895a37ba4d4e4a4add892000fdf8a3ef45da",
+      "files": 114
+    },
+    {
+      "repo": "app_mobile_techa",
+      "branch": "main",
+      "sha": "133355eb95d3bfbf010e77c24e55b815b07ac1f5",
+      "files": 98
+    },
+    {
+      "repo": "techa-web-legado",
+      "branch": "main",
+      "sha": "fd12b72355415a64c3cc15f610a8c5ae591c2821",
+      "files": 11
+    },
+    {
+      "repo": "voragon",
+      "branch": "main",
+      "sha": "ba5677e1c44c41480a3ab51720ec3b90590a6bd2",
+      "files": 34
+    },
+    {
+      "repo": "voragon-instagram",
+      "branch": "main",
+      "sha": "7dcf0b1ef14cb0d574331b68aa254d8ca78fd9ee",
+      "files": 7
+    },
+    {
+      "repo": "lumino-voragon",
+      "branch": "main",
+      "sha": "b8deab3fdad6c74f17e9de16065071f68a27cffa",
+      "files": 13
+    },
+    {
+      "repo": "blend-wine",
+      "branch": "main",
+      "sha": "443acfb3fdf19874860e7567635faa6cd6a9c7e6",
+      "files": 16
+    },
+    {
+      "repo": "corpo-culto",
+      "branch": "main",
+      "sha": "a3fb18ab34786d9fb2647821048abca97888be6f",
+      "files": 6
+    },
+    {
+      "repo": "agenda-voz",
+      "branch": "main",
+      "sha": "b67d8c8b85d7e3abda28bbdeb11f9e831832bc1a",
+      "files": 11
+    },
+    {
+      "repo": "editor-local",
+      "branch": "main",
+      "sha": "3d62cd6ba98b7f82993de659af63fc94a7f02809",
+      "files": 2
+    }
+  ],
+  "codigos_agrupados": [
+    {
+      "repo": "satirinhas-ia",
+      "path": "codigos/satirinhas-ia",
+      "files": 15,
+      "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/satirinhas-ia"
+    },
+    {
+      "repo": "impulso-academy",
+      "path": "codigos/impulso-academy",
+      "files": 1,
+      "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/impulso-academy"
+    },
+    {
+      "repo": "bpmn-scripts",
+      "path": "codigos/bpmn-scripts",
+      "files": 3,
+      "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/bpmn-scripts"
+    },
+    {
+      "repo": "techa-acervo-20260909",
+      "path": "codigos/techa-acervo-20260909",
+      "files": 107,
+      "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/techa-acervo-20260909"
+    }
   ]
 }
