@@ -1,0 +1,278 @@
+{
+  "data": "2026-10-23",
+  "conta": "vorpageljeff",
+  "escopo": "Inventário dos repositórios acessíveis, 16 projetos Vercel consultados nesta sessão e pastas em Documents. Não é garantia de cobertura de todo o histórico.",
+  "repositorios": [
+    {
+      "nome": "docker",
+      "url": "https://github.com/vorpageljeff/docker",
+      "visibilidade": "public",
+      "categoria": "Infraestrutura",
+      "resumo": "Docker Compose e configuração do Prometheus",
+      "branch": "main"
+    },
+    {
+      "nome": "Entregaconversor",
+      "url": "https://github.com/vorpageljeff/Entregaconversor",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Repositório com somente README na branch principal; código não localizado",
+      "branch": "main"
+    },
+    {
+      "nome": "reservas-salas-microservices",
+      "url": "https://github.com/vorpageljeff/reservas-salas-microservices",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "README descreve o Projeto Integrador Ambiente-se; nome e documentação precisam ser conciliados",
+      "branch": "main"
+    },
+    {
+      "nome": "Lista_de_Compras_com_Checklists_Requisitos",
+      "url": "https://github.com/vorpageljeff/Lista_de_Compras_com_Checklists_Requisitos",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Repositório com somente README na branch principal; código não localizado",
+      "branch": "main"
+    },
+    {
+      "nome": "Assistente_de_Compras",
+      "url": "https://github.com/vorpageljeff/Assistente_de_Compras",
+      "visibilidade": "public",
+      "categoria": "Aplicativos e IA",
+      "resumo": "Aplicativo Flutter com integração a modelo de linguagem para recomendações de compras",
+      "branch": "main"
+    },
+    {
+      "nome": "Entrega_Prf_Alan",
+      "url": "https://github.com/vorpageljeff/Entrega_Prf_Alan",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Repositório com somente README na branch principal; código não localizado",
+      "branch": "main"
+    },
+    {
+      "nome": "tradutor-profvini",
+      "url": "https://github.com/vorpageljeff/tradutor-profvini",
+      "visibilidade": "public",
+      "categoria": "Estudos e entregas",
+      "resumo": "Repositório com somente README na branch principal; código não localizado",
+      "branch": "main"
+    },
+    {
+      "nome": "agrovision_adsA",
+      "url": "https://github.com/vorpageljeff/agrovision_adsA",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "Repositório sem conteúdo listado na coleta",
+      "branch": "main"
+    },
+    {
+      "nome": "agrovision",
+      "url": "https://github.com/vorpageljeff/agrovision",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "FastAPI, chat e visão computacional com material didático",
+      "branch": "main"
+    },
+    {
+      "nome": "brand-safari",
+      "url": "https://github.com/vorpageljeff/brand-safari",
+      "visibilidade": "public",
+      "categoria": "Sites e marcas",
+      "resumo": "Aplicação React e Vite",
+      "branch": "main"
+    },
+    {
+      "nome": "techa-backend",
+      "url": "https://github.com/vorpageljeff/techa-backend",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "API FastAPI para plataforma Techá com processamento geoespacial",
+      "branch": "main"
+    },
+    {
+      "nome": "app_mobile_techa",
+      "url": "https://github.com/vorpageljeff/app_mobile_techa",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "Repositório sem conteúdo listado na coleta; não confundir com aplicação publicada",
+      "branch": "main"
+    },
+    {
+      "nome": "maxicon_ai_portal_template",
+      "url": "https://github.com/vorpageljeff/maxicon_ai_portal_template",
+      "visibilidade": "public",
+      "categoria": "Gestão e operações",
+      "resumo": "Repositório sem conteúdo listado; versão com código em Portal-inteligente-de-projetos-maxicon_ai_portal_template",
+      "branch": "main"
+    },
+    {
+      "nome": "Portal-inteligente-de-projetos-maxicon_ai_portal_template",
+      "url": "https://github.com/vorpageljeff/Portal-inteligente-de-projetos-maxicon_ai_portal_template",
+      "visibilidade": "public",
+      "categoria": "Gestão e operações",
+      "resumo": "Gestão de projetos, horas, riscos e LPN com IA; FastAPI, Next.js e Flutter",
+      "branch": "main"
+    },
+    {
+      "nome": "viagem-jj",
+      "url": "https://github.com/vorpageljeff/viagem-jj",
+      "visibilidade": "private",
+      "categoria": "Aplicativos pessoais",
+      "resumo": "Bora!: gestão de viagens, participantes, cenários e despesas",
+      "branch": "main"
+    },
+    {
+      "nome": "dr-performance-platform",
+      "url": "https://github.com/vorpageljeff/dr-performance-platform",
+      "visibilidade": "private",
+      "categoria": "Gestão e operações",
+      "resumo": "Plataforma com Next.js, Fastify, PostgreSQL e Drizzle",
+      "branch": "main"
+    },
+    {
+      "nome": "Transboes_portal_mobile",
+      "url": "https://github.com/vorpageljeff/Transboes_portal_mobile",
+      "visibilidade": "private",
+      "categoria": "Gestão e operações",
+      "resumo": "Gestão operacional de fretes com Next.js, FastAPI e PostgreSQL",
+      "branch": "main"
+    },
+    {
+      "nome": "innovagro-360",
+      "url": "https://github.com/vorpageljeff/innovagro-360",
+      "visibilidade": "public",
+      "categoria": "Agronegócio",
+      "resumo": "CRM, projetos, financeiro e gestão; Next.js e FastAPI",
+      "branch": "main"
+    }
+  ],
+  "vercel": [
+    {
+      "nome": "voragon",
+      "repo": null,
+      "pasta": "Voragon_Site",
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "voragon-instagram",
+      "repo": null,
+      "pasta": "Voragon_Instagram",
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "innovagro-360",
+      "repo": "innovagro-360",
+      "pasta": "360_CRM_Gestao",
+      "associacao": "Correspondência por nome e documentação; vínculo Git da Vercel não confirmado"
+    },
+    {
+      "nome": "techa-mobile-web",
+      "repo": null,
+      "pasta": "Projeto_techa",
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "mobile",
+      "repo": null,
+      "pasta": "Projeto_techa",
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "lumino-voragon",
+      "repo": null,
+      "pasta": null,
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "blend-wine",
+      "repo": null,
+      "pasta": null,
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "corpo-culto",
+      "repo": null,
+      "pasta": null,
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "transboes",
+      "repo": "Transboes_portal_mobile",
+      "pasta": "Transboes_portal_mobile",
+      "associacao": "Correspondência por nome e documentação; vínculo Git da Vercel não confirmado"
+    },
+    {
+      "nome": "techa-admin-portal",
+      "repo": null,
+      "pasta": "Projeto_techa",
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "portal-inteligente-de-projetos-maxicon-ai-portal-template",
+      "repo": "Portal-inteligente-de-projetos-maxicon_ai_portal_template",
+      "pasta": null,
+      "associacao": "Correspondência por nome e documentação; vínculo Git da Vercel não confirmado"
+    },
+    {
+      "nome": "viagem-jj",
+      "repo": "viagem-jj",
+      "pasta": null,
+      "associacao": "Correspondência por nome e documentação; vínculo Git da Vercel não confirmado"
+    },
+    {
+      "nome": "sil-sommelier",
+      "repo": null,
+      "pasta": null,
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "jefferson-vorpagel-ai",
+      "repo": null,
+      "pasta": null,
+      "associacao": "Repositório correspondente não identificado"
+    },
+    {
+      "nome": "brand-safari",
+      "repo": "brand-safari",
+      "pasta": null,
+      "associacao": "Correspondência por nome e documentação; vínculo Git da Vercel não confirmado"
+    },
+    {
+      "nome": "luiza-reis-terapeuta-floral",
+      "repo": null,
+      "pasta": null,
+      "associacao": "Repositório correspondente não identificado"
+    }
+  ],
+  "locaisAdicionais": [
+    {
+      "pasta": "agenda-voz",
+      "descricao": "Aplicativo macOS SwiftUI para ditar compromissos e salvar no Calendário"
+    },
+    {
+      "pasta": "EditorLocal / EditorLocal 2 / EditorLocal.html",
+      "descricao": "Editor local; variantes a comparar"
+    },
+    {
+      "pasta": "Voragon_Comercial",
+      "descricao": "Material comercial; conteúdo a revisar antes de versionar"
+    },
+    {
+      "pasta": "Voragon_Videos",
+      "descricao": "Material audiovisual; conteúdo a revisar antes de versionar"
+    },
+    {
+      "pasta": "satirinhas_ia",
+      "descricao": "Pasta local; finalidade e arquivos a revisar"
+    }
+  ],
+  "pendencias": [
+    "Identificar e importar fontes dos projetos Vercel sem repositório correspondente.",
+    "Recuperar código de quatro repositórios com somente README e avaliar três repositórios vazios.",
+    "Conciliar nome reservas-salas-microservices com README Ambiente-se.",
+    "Comparar mobile e techa-mobile-web antes de consolidar.",
+    "Revisar conteúdo local antes de publicar arquivos; preservar visibilidade privada."
+  ]
+}
