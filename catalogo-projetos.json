@@ -303,15 +303,19 @@
     },
     {
       "nome": "sil-sommelier",
-      "repo": null,
+      "repo": "central-de-projetos",
       "pasta": null,
-      "associacao": "Repositório correspondente não identificado"
+      "associacao": "Repositório correspondente não identificado",
+      "path": "codigos/sil-sommelier",
+      "source_url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/sil-sommelier"
     },
     {
       "nome": "jefferson-vorpagel-ai",
-      "repo": null,
+      "repo": "central-de-projetos",
       "pasta": null,
-      "associacao": "Repositório correspondente não identificado"
+      "associacao": "Repositório correspondente não identificado",
+      "path": "codigos/jefferson-vorpagel-ai",
+      "source_url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/jefferson-vorpagel-ai"
     },
     {
       "nome": "brand-safari",
@@ -321,37 +325,43 @@
     },
     {
       "nome": "luiza-reis-terapeuta-floral",
-      "repo": null,
+      "repo": "central-de-projetos",
       "pasta": null,
-      "associacao": "Repositório correspondente não identificado"
+      "associacao": "Repositório correspondente não identificado",
+      "path": "codigos/luiza-reis-terapeuta-floral",
+      "source_url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/luiza-reis-terapeuta-floral"
     }
   ],
   "locaisAdicionais": [
     {
       "pasta": "agenda-voz",
-      "descricao": "Aplicativo macOS SwiftUI para ditar compromissos e salvar no Calendário"
+      "descricao": "Aplicativo macOS SwiftUI para ditar compromissos e salvar no Calendário",
+      "publicacao": "https://github.com/vorpageljeff/agenda-voz"
     },
     {
       "pasta": "EditorLocal / EditorLocal 2 / EditorLocal.html",
-      "descricao": "Editor local; variantes a comparar"
+      "descricao": "Editor local; variantes a comparar",
+      "publicacao": "https://github.com/vorpageljeff/editor-local"
     },
     {
       "pasta": "Voragon_Comercial",
-      "descricao": "Material comercial; conteúdo a revisar antes de versionar"
+      "descricao": "Material comercial; conteúdo a revisar antes de versionar",
+      "situacao": "Materiais comerciais e audiovisuais não publicados como código; protótipos com fontes publicados separadamente"
     },
     {
       "pasta": "Voragon_Videos",
-      "descricao": "Material audiovisual; conteúdo a revisar antes de versionar"
+      "descricao": "Material audiovisual; conteúdo a revisar antes de versionar",
+      "situacao": "Materiais comerciais e audiovisuais não publicados como código; protótipos com fontes publicados separadamente"
     },
     {
       "pasta": "satirinhas_ia",
-      "descricao": "Pasta local; finalidade e arquivos a revisar"
+      "descricao": "Scripts Python para criação e preparação de conteúdo; sessões e saídas excluídas",
+      "publicacao": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/satirinhas-ia"
     }
   ],
   "pendencias": [
     "Revogar a chave Google que estava no histórico de Assistente_de_Compras; a versão atual usa configuração externa.",
     "Recuperar a origem do submódulo ReservasMS em Entrega_Prf_Alan.",
-    "Identificar fontes de sil-sommelier, jefferson-vorpagel-ai e luiza-reis-terapeuta-floral, não localizadas nos arquivos consultados.",
     "Transboes_portal_mobile permanece privado para preservar documentos operacionais; código público em transboes-codigo."
   ],
   "publicacoes_locais": [
@@ -452,6 +462,27 @@
       "path": "codigos/techa-acervo-20260909",
       "files": 107,
       "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/techa-acervo-20260909"
+    },
+    {
+      "repo": "sil-sommelier",
+      "path": "codigos/sil-sommelier",
+      "files": 13,
+      "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/sil-sommelier",
+      "origem": "Vercel; hashes conferidos"
+    },
+    {
+      "repo": "jefferson-vorpagel-ai",
+      "path": "codigos/jefferson-vorpagel-ai",
+      "files": 30,
+      "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/jefferson-vorpagel-ai",
+      "origem": "Vercel; hashes conferidos"
+    },
+    {
+      "repo": "luiza-reis-terapeuta-floral",
+      "path": "codigos/luiza-reis-terapeuta-floral",
+      "files": 9,
+      "url": "https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/luiza-reis-terapeuta-floral",
+      "origem": "Vercel; hashes conferidos"
     }
   ]
 }

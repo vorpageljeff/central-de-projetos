@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meditação Guiada - Luiza Reis</title>
+    <meta
+      name="description"
+      content="Uma meditação guiada de Luiza Reis para desacelerar, respirar e retornar ao próprio centro com presença."
+    >
+    <meta property="og:title" content="Meditação Guiada - Luiza Reis">
+    <meta property="og:description" content="Um convite para respirar, sentir e voltar para si.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ url_for('static', path='assets/og-placeholder.svg') }}">
+    <meta name="theme-color" content="#ede6da">
+    <link rel="icon" href="{{ url_for('static', path='assets/favicon.svg') }}" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+  </head>
+  <body>
+    {% set whatsapp_url = "https://wa.me/" ~ whatsapp_number ~ "?text=Ola,%20Luiza.%20Gostaria%20de%20saber%20mais%20sobre%20a%20meditacao." %}
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Luiza Reis - inicio">
+        <span>Luiza Reis</span>
+        <small>Meditação Guiada</small>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" data-nav aria-label="Navegacao principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#meditacao">Meditação</a>
+        <a href="#para-quem">Para quem</a>
+        <a href="#contato">Instagram</a>
+      </nav>
+
+      <a class="header-cta" href="{{ instagram_url }}" target="_blank" rel="noopener">( Instagram )</a>
+    </header>
+
+    <main>
+      <section class="hero hero-ovitra" id="inicio">
+        <div class="hero-image hero-image-left reveal">
+          <!-- Substituir por imagem real do Instagram @luizareisterapiafloral, com autorização. -->
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85" alt="Natureza em luz suave para meditação">
+        </div>
+
+        <div class="hero-center reveal">
+          <h1>
+            <span>Espaço para <em>respirar</em>.</span>
+            <span>Silêncio para <em>sentir</em>.</span>
+            <span>Meditação como <em>ritual</em>.</span>
+          </h1>
+        </div>
+
+        <div class="hero-image hero-image-right reveal">
+          <!-- Substituir por foto/video real da Luiza no Instagram, se autorizado. -->
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=85" alt="Flores em luz natural">
+        </div>
+
+        <div class="hero-bottom-actions">
+          <a class="hero-link hero-link-left" href="{{ instagram_url }}" target="_blank" rel="noopener">( Ver meditação )</a>
+          <a class="hero-link hero-link-right" href="#meditacao">( Entender o convite )</a>
+        </div>
+      </section>
+
+      <section class="statement section-soft" id="meditacao">
+        <div class="statement-inner reveal">
+          <h2>
+            Uma meditação guiada para desacelerar o corpo, acolher o que está presente
+            e retornar ao seu eixo com mais delicadeza.
+          </h2>
+          <div class="statement-lines">
+            <p>Menos ruído.</p>
+            <p>Mais presença.</p>
+            <p>Um tempo só seu.</p>
+          </div>
+          <a class="button button-dark" href="{{ instagram_url }}" target="_blank" rel="noopener">( Acessar pelo Instagram )</a>
+        </div>
+      </section>
+
+      <section class="ritual section-light" aria-labelledby="ritual-title">
+        <div class="ritual-title reveal">
+          <h2 id="ritual-title">
+            <span>Pausa encontra</span>
+            <span>presença.</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="paths section-light" id="para-quem">
+        <div class="paths-heading reveal">
+          <p class="eyebrow">Para quem é</p>
+          <h2>Para dias em que você precisa sair do automático e voltar para dentro.</h2>
+        </div>
+
+        <div class="path-grid path-grid-three">
+          <article class="path-card reveal">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85" alt="Pessoa em momento de pausa e respiração">
+            <div>
+              <h3>Respirar</h3>
+              <p>Para quando a mente está cheia e o corpo pede uma pausa real.</p>
+            </div>
+          </article>
+          <article class="path-card reveal">
+            <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?auto=format&fit=crop&w=900&q=85" alt="Luz suave em ambiente tranquilo">
+            <div>
+              <h3>Acalmar</h3>
+              <p>Para atravessar ansiedade, tensão e excesso de cobrança com mais cuidado.</p>
+            </div>
+          </article>
+          <article class="path-card reveal">
+            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=900&q=85" alt="Folhagens e natureza para prática contemplativa">
+            <div>
+              <h3>Retornar</h3>
+              <p>Para lembrar do seu ritmo e criar um pequeno ritual de presença.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section-dark" id="contato">
+        <div class="experience-media reveal">
+          <!-- Substituir por capa do post/reel da meditação no Instagram da Luiza. -->
+          <img src="https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?auto=format&fit=crop&w=1400&q=85" alt="Natureza com luz baixa e atmosfera contemplativa">
+        </div>
+        <div class="experience-copy reveal">
+          <p class="eyebrow">Convite</p>
+          <h2>
+            <span>Coloque os fones.</span>
+            <span>Encontre um lugar calmo.</span>
+            <span>Deixe a voz conduzir.</span>
+          </h2>
+          <p>
+            A meditação está no Instagram da Luiza. Entre no perfil, conheça o trabalho dela
+            e siga para receber novos conteúdos de presença, florais e cuidado emocional.
+          </p>
+          <div class="hero-actions align-left">
+            <a class="button button-light" href="{{ instagram_url }}" target="_blank" rel="noopener">( Ir para o Instagram )</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a class="floating-whatsapp" href="{{ instagram_url }}" target="_blank" rel="noopener" aria-label="Abrir Instagram da Luiza">
+      Instagram
+    </a>
+
+    <footer class="footer">
+      <div>
+        <strong>Luiza Reis</strong>
+        <span>Meditação Guiada</span>
+      </div>
+      <p>Uma pausa para respirar. Um retorno para si.</p>
+      <nav aria-label="Links do rodape">
+        <a href="#inicio">Inicio</a>
+        <a href="#meditacao">Meditação</a>
+        <a href="#para-quem">Para quem</a>
+      </nav>
+      <a href="{{ instagram_url }}" target="_blank" rel="noopener">@luizareisterapiafloral</a>
+      <small>© {{ current_year }} Luiza Reis</small>
+    </footer>
+
+    <script src="{{ url_for('static', path='script.js') }}"></script>
+  </body>
+</html>

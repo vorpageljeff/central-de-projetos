@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "partials.html" import article_card with context %}
+{% set meta_title = category.name ~ ' | Jefferson Vorpagel AI' %}
+{% set meta_description = category.description %}
+
+{% block content %}
+  <section class="page-hero compact-hero">
+    <p class="eyebrow">Categoria</p>
+    <h1>{{ category.name }}</h1>
+    <p>{{ category.description }}</p>
+  </section>
+  <section class="section">
+    <div class="article-grid">
+      {% for article in articles %}
+        {{ article_card(article) }}
+      {% else %}
+        <p>Categoria pronta para receber novas análises.</p>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

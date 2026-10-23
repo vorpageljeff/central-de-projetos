@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ meta_description | default('Notícias internacionais de IA traduzidas para impacto prático no Brasil, com análise autoral para negócios, educação, tecnologia e agro.') }}" />
+    <meta property="og:title" content="{{ meta_title | default('Jefferson Vorpagel AI | Portal de IA Aplicada') }}" />
+    <meta property="og:description" content="{{ meta_description | default('O que as grandes notícias de IA significam para empresas, professores, analistas, gestores, tecnologia e agro.') }}" />
+    <meta property="og:type" content="{{ og_type | default('website') }}" />
+    <meta property="og:image" content="{{ og_image | default('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=82') }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{{ meta_title | default('Jefferson Vorpagel AI | Portal de IA Aplicada') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}" />
+    {% if settings.adsense_client_id %}
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ settings.adsense_client_id }}" crossorigin="anonymous"></script>
+    {% endif %}
+    {% if schema_json %}
+      <script type="application/ld+json">{{ schema_json | safe }}</script>
+    {% endif %}
+    {% if settings.ga_measurement_id %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ settings.ga_measurement_id }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "{{ settings.ga_measurement_id }}");
+      </script>
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="/" aria-label="Ir para a home">
+        <span class="brand-mark">JV</span>
+        <span>Jefferson Vorpagel AI</span>
+      </a>
+      <button class="menu-button" type="button" data-menu-button aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" data-nav aria-label="Navegação principal">
+        {% for category in categories[:6] %}
+          <a href="/categorias/{{ category.slug }}">{{ category.name }}</a>
+        {% endfor %}
+        <a href="/anuncie">Anuncie</a>
+        <a class="nav-action" href="/consultoria">Consultoria</a>
+        <form class="search-form" action="/buscar" method="get" role="search">
+          <input name="q" type="search" placeholder="Buscar" aria-label="Buscar no portal" />
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      {% if top_ad %}
+        <a class="ad-strip" href="{{ top_ad.target_url }}" data-event="ad_click" data-ad-position="{{ top_ad.position }}">
+          <span>{{ top_ad.advertiser }}</span>
+          <strong>{{ top_ad.title }}</strong>
+        </a>
+      {% endif %}
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Jefferson Vorpagel AI</strong>
+        <p>Portal de curadoria e análise prática sobre inteligência artificial aplicada.</p>
+      </div>
+      <nav aria-label="Links institucionais">
+        <a href="/sobre">Sobre</a>
+        <a href="/anuncie">Anuncie</a>
+        <a href="/consultoria">Consultoria</a>
+        <a href="https://br.linkedin.com/in/jeffersonvorpagel" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://wa.me/{{ whatsapp_phone }}" target="_blank" rel="noreferrer">WhatsApp</a>
+      </nav>
+    </footer>
+
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+  </body>
+</html>

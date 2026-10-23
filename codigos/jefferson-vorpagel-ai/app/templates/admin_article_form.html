@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% from "partials.html" import message_box with context %}
+{% set meta_title = 'Editar noticia | Jefferson Vorpagel AI' %}
+{% set meta_description = 'Formulario editorial do portal.' %}
+
+{% block content %}
+  <section class="admin-shell">
+    <div class="admin-header">
+      <div>
+        <p class="eyebrow">Editor do portal</p>
+        <h1>{{ 'Nova noticia' if mode == 'new' else 'Editar noticia' }}</h1>
+        <p>Use a IA como apoio de rascunho, mas publique somente depois de revisar fonte, contexto e analise.</p>
+      </div>
+      <a class="button button-secondary" href="/admin/artigos">Voltar</a>
+    </div>
+
+    {{ message_box(message) }}
+
+    <form class="editor-form" action="{{ form_action }}" method="post">
+      <section class="editor-panel">
+        <h2>Dados principais</h2>
+        <label>Titulo<input name="title" value="{{ article.title }}" required /></label>
+        <label>Subtitulo<textarea name="subtitle" rows="2">{{ article.subtitle }}</textarea></label>
+        <div class="form-grid">
+          <label>Slug<input name="new_slug" value="{{ article.slug }}" placeholder="gerado pelo titulo se ficar vazio" /></label>
+          <label>Categoria
+            <select name="category">
+              {% for category in categories %}
+                <option value="{{ category.name }}" {{ 'selected' if article.category == category.name else '' }}>{{ category.name }}</option>
+              {% endfor %}
+            </select>
+          </label>
+        </div>
+        <div class="form-grid">
+          <label>Autor<input name="author" value="{{ article.author }}" /></label>
+          <label>Data de publicacao<input name="published_at" type="date" value="{{ article.published_at.isoformat() }}" /></label>
+          <label>Tempo de leitura<input name="reading_time" value="{{ article.reading_time }}" /></label>
+          <label>Relevancia 0-100<input name="relevance_score" type="number" min="0" max="100" value="{{ article.relevance_score }}" /></label>
+        </div>
+        <label>Tags<input name="tags" value="{{ article.tags | join(', ') }}" placeholder="agentes, negocios, educacao" /></label>
+      </section>
+
+      <section class="editor-panel">
+        <h2>Imagem e SEO</h2>
+        <label>Imagem destacada<input name="image" value="{{ article.image }}" /></label>
+        <label>Texto alternativo<input name="image_alt" value="{{ article.image_alt }}" /></label>
+        <label>Meta title<input name="meta_title" value="{{ article.meta_title }}" /></label>
+        <label>Meta description<textarea name="meta_description" rows="2">{{ article.meta_description }}</textarea></label>
+        <label>Open Graph image<input name="og_image" value="{{ article.og_image }}" /></label>
+      </section>
+
+      <section class="editor-panel">
+        <h2>Fonte e automacao com IA</h2>
+        <div class="form-grid">
+          <label>Fonte original<input name="source_name" value="{{ article.source_name }}" /></label>
+          <label>URL da fonte<input name="source_url" value="{{ article.source_url }}" /></label>
+          <label>Idioma original<input name="original_language" value="{{ article.original_language }}" /></label>
+          <label>Categoria sugerida<input name="suggested_category" value="{{ article.suggested_category }}" /></label>
+        </div>
+        <label>Resumo gerado por IA<textarea name="ai_summary" rows="3">{{ article.ai_summary }}</textarea></label>
+        <label>Publico impactado<textarea name="impacted_audience" rows="2">{{ article.impacted_audience | join(', ') }}</textarea></label>
+      </section>
+
+      <section class="editor-panel">
+        <h2>Conteudo editorial</h2>
+        <label>O que aconteceu<textarea name="what_happened" rows="4">{{ article.what_happened }}</textarea></label>
+        <label>Por que importa<textarea name="why_matters" rows="4">{{ article.why_matters }}</textarea></label>
+        <label>Quem sera impactado<textarea name="who_impacted" rows="3">{{ article.who_impacted }}</textarea></label>
+        <label>Minha analise<textarea name="my_analysis" rows="5">{{ article.my_analysis }}</textarea></label>
+        <label>Como aplicar na pratica<textarea name="how_to_apply" rows="5" placeholder="Uma acao por linha">{{ article.how_to_apply | join('\n') }}</textarea></label>
+      </section>
+
+      <section class="editor-panel">
+        <h2>Status e transparencia</h2>
+        <div class="form-grid">
+          <label>Status editorial
+            <select name="editorial_status">
+              {% for status_item in editorial_statuses %}
+                <option value="{{ status_item }}" {{ 'selected' if article.editorial_status == status_item else '' }}>{{ status_item.replace('-', ' ') }}</option>
+              {% endfor %}
+            </select>
+          </label>
+          <label class="check-field"><input type="checkbox" name="human_reviewed" value="sim" {{ 'checked' if article.human_reviewed else '' }} /> Revisado por humano</label>
+          <label class="check-field"><input type="checkbox" name="sponsored" value="sim" {{ 'checked' if article.sponsored else '' }} /> Conteudo patrocinado</label>
+          <label class="check-field"><input type="checkbox" name="affiliate_notice" value="sim" {{ 'checked' if article.affiliate_notice else '' }} /> Possui links afiliados</label>
+        </div>
+      </section>
+
+      <div class="editor-actions">
+        <button class="button button-secondary" type="submit" name="action" value="salvar">Salvar rascunho</button>
+        <button class="button button-secondary" type="submit" name="action" value="aprovar">Aprovar</button>
+        <button class="button button-primary" type="submit" name="action" value="publicar">Publicar</button>
+        <button class="button danger-button" type="submit" name="action" value="arquivar">Arquivar</button>
+      </div>
+    </form>
+  </section>
+{% endblock %}

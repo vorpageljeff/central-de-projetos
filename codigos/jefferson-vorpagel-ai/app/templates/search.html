@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "partials.html" import article_card with context %}
+{% set meta_title = 'Busca | Jefferson Vorpagel AI' %}
+{% set meta_description = 'Busque análises, notícias e guias sobre IA aplicada.' %}
+
+{% block content %}
+  <section class="page-hero compact-hero">
+    <p class="eyebrow">Busca</p>
+    <h1>Busca no portal</h1>
+    <form class="hero-search" action="/buscar" method="get" role="search">
+      <input name="q" type="search" value="{{ query }}" placeholder="Digite um tema, categoria ou ferramenta" aria-label="Buscar no portal" />
+      <button class="button button-primary" type="submit">Buscar</button>
+    </form>
+  </section>
+  <section class="section">
+    <div class="section-heading align-left">
+      <h2>{{ 'Resultados para "' ~ query ~ '"' if query else 'Digite um termo para buscar' }}</h2>
+    </div>
+    <div class="article-grid">
+      {% for article in articles %}
+        {{ article_card(article) }}
+      {% else %}
+        {% if query %}
+          <p>Nenhum conteúdo encontrado para esse termo.</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

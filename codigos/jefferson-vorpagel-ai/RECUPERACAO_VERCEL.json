@@ -1,0 +1,157 @@
+{
+  "data": "2026-10-23",
+  "deployment": "dpl_AL8PTn2qKtEY3cewXvKJiF8pPAqb",
+  "arquivos": [
+    {
+      "path": ".env.example",
+      "hash": "d6ad250846ce4c4aae9f34f5313ea8d2f441f906",
+      "bytes": 384
+    },
+    {
+      "path": ".vercelignore",
+      "hash": "b9ab5477119220041465f56535533e1d3fad2fed",
+      "bytes": 51
+    },
+    {
+      "path": "app/__init__.py",
+      "hash": "79af7c2bce4f7de12501c3d35374dd0f44b30510",
+      "bytes": 62
+    },
+    {
+      "path": "app/config.py",
+      "hash": "aa939d8ca1fdfc7045044a7aa121b2881b50bc97",
+      "bytes": 1921
+    },
+    {
+      "path": "app/main.py",
+      "hash": "f3af51568151d9c21da0cdcb2b1fd29a984b2430",
+      "bytes": 298
+    },
+    {
+      "path": "app/services/__init__.py",
+      "hash": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc",
+      "bytes": 1
+    },
+    {
+      "path": "app/services/leads.py",
+      "hash": "e011b9da51dbfd8bc2b5057025557de9e8b31b5a",
+      "bytes": 730
+    },
+    {
+      "path": "app/services/newsbot.py",
+      "hash": "b9ff00b3deb3e89e074cba91bea659df97c5e678",
+      "bytes": 10810
+    },
+    {
+      "path": "app/services/notifications.py",
+      "hash": "fc471e7663836ed4d3a1df93ad50b457f2429d99",
+      "bytes": 771
+    },
+    {
+      "path": "app/services/portal.py",
+      "hash": "d4980fc978c4b7d91d24ebf284b0f4a9db6f5e57",
+      "bytes": 18048
+    },
+    {
+      "path": "app/web/__init__.py",
+      "hash": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc",
+      "bytes": 1
+    },
+    {
+      "path": "app/web/routes.py",
+      "hash": "86514c037496c2e786e31131cd0f497bbdf2e8c7",
+      "bytes": 20782
+    },
+    {
+      "path": "app/static/script.js",
+      "hash": "63b533916b9e07de117e61521c737a4888dd69a7",
+      "bytes": 1426
+    },
+    {
+      "path": "app/static/styles.css",
+      "hash": "48972372ef9fb1c06913914aba0b398f81670b3d",
+      "bytes": 15456
+    },
+    {
+      "path": "app/templates/404.html",
+      "hash": "ed6e73ff23c508cc79c16e397f6941f9897f6706",
+      "bytes": 422
+    },
+    {
+      "path": "app/templates/about.html",
+      "hash": "085b504f550378e1e2a18a28e06c4e31d45774e5",
+      "bytes": 1541
+    },
+    {
+      "path": "app/templates/admin_article_form.html",
+      "hash": "751f7c3aa338b3b414a01e87255ed51c78c99dc3",
+      "bytes": 5877
+    },
+    {
+      "path": "app/templates/admin_articles.html",
+      "hash": "27ae8036a607234a403d9847d8f7d9ad3795cfed",
+      "bytes": 2544
+    },
+    {
+      "path": "app/templates/advertise.html",
+      "hash": "d51e020cc8dbc8b1f62351898382adfc3f4812cb",
+      "bytes": 2167
+    },
+    {
+      "path": "app/templates/article.html",
+      "hash": "055fb02114bd1e5f9b7dc32bb7cdce21568bd9cb",
+      "bytes": 4399
+    },
+    {
+      "path": "app/templates/base.html",
+      "hash": "8c4ff16289a4635114a3a8be4533f4db0346048c",
+      "bytes": 3836
+    },
+    {
+      "path": "app/templates/category.html",
+      "hash": "ad37b622b4b535fb154b2b604dc91c9294e0c4bc",
+      "bytes": 655
+    },
+    {
+      "path": "app/templates/consulting.html",
+      "hash": "b9ba65edf9315ae42f1fe9d6319c16d08cd434b0",
+      "bytes": 1458
+    },
+    {
+      "path": "app/templates/home.html",
+      "hash": "0dc12254bf9afb1c0178986eadfa19474390bb8c",
+      "bytes": 3452
+    },
+    {
+      "path": "app/templates/partials.html",
+      "hash": "6ea7c5bcc768e32e391348911431fe6ccd890b46",
+      "bytes": 3406
+    },
+    {
+      "path": "app/templates/search.html",
+      "hash": "2d1bd82166b4343d3bef7701c473f34ed15c306a",
+      "bytes": 1136
+    },
+    {
+      "path": "pyproject.toml",
+      "hash": "bb8012d3f08e7cd844fae19d50562ef8daeca24e",
+      "bytes": 247
+    },
+    {
+      "path": "requirements.txt",
+      "hash": "cd73b864c343a395e9f9e6bb5dfea30878188474",
+      "bytes": 82
+    },
+    {
+      "path": "run.py",
+      "hash": "842d8c8969cbb7afd7808d676a391fd6307746a0",
+      "bytes": 118
+    },
+    {
+      "path": "vercel.json",
+      "hash": "adbdfce0b571398053b9a3c0473a6869979c46d5",
+      "bytes": 102
+    }
+  ],
+  "verificacao": "SHA-1 de todos os arquivos recuperados coincide com os identificadores do deployment. Logs e funções compiladas não incluídos."
+}

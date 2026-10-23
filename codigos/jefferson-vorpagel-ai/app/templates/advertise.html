@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% from "partials.html" import message_box with context %}
+{% set meta_title = 'Anuncie no Portal | Jefferson Vorpagel AI' %}
+{% set meta_description = 'Formatos comerciais para marcas que querem falar com público interessado em IA aplicada, negócios, educação, tecnologia e agro.' %}
+
+{% block content %}
+  <section class="page-hero">
+    <p class="eyebrow">Mídia e patrocínio</p>
+    <h1>Anuncie no Portal</h1>
+    <p>Fale com profissionais que acompanham IA para tomar decisões melhores em empresas, educação, tecnologia e agro.</p>
+  </section>
+  <section class="section split-section">
+    <div>
+      <h2>Possibilidades comerciais</h2>
+      <div class="feature-list">
+        <article><h3>Banners</h3><p>Topo, lateral, dentro da matéria e final de artigo.</p></article>
+        <article><h3>Matéria patrocinada</h3><p>Conteúdo identificado claramente como patrocinado.</p></article>
+        <article><h3>Newsletter patrocinada</h3><p>Inserção comercial em uma audiência segmentada.</p></article>
+        <article><h3>Patrocínio de categoria</h3><p>Associação com temas como IA no Agro, Educação ou Negócios.</p></article>
+      </div>
+    </div>
+    <form class="portal-form light" id="formulario" action="{{ url_for('advertise_interest') }}" method="post">
+      {{ message_box(message) }}
+      <label>Nome<input name="nome" type="text" required /></label>
+      <label>Empresa<input name="empresa" type="text" required /></label>
+      <label>E-mail<input name="email" type="email" required /></label>
+      <label>Telefone/WhatsApp<input name="telefone" type="text" /></label>
+      <label>Tipo de interesse
+        <select name="interesse" required>
+          <option>Banner</option>
+          <option>Matéria patrocinada</option>
+          <option>Newsletter patrocinada</option>
+          <option>Patrocínio de categoria</option>
+          <option>Outro formato</option>
+        </select>
+      </label>
+      <label>Mensagem<textarea name="mensagem" rows="4"></textarea></label>
+      <button class="button button-primary" type="submit">Enviar interesse</button>
+    </form>
+  </section>
+{% endblock %}

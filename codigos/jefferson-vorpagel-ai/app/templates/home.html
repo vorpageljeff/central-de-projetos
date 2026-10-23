@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% from "partials.html" import article_card, newsletter_block, cta_consulting, adsense_unit with context %}
+
+{% block content %}
+  <section class="portal-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">IA aplicada aos negócios</p>
+      <h1>Notícias internacionais de IA traduzidas para impacto prático no Brasil.</h1>
+      <p>O que as grandes notícias de IA significam para empresas, professores, analistas, gestores, tecnologia e agro.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#ultimas">Ler últimas análises</a>
+        <a class="button button-secondary" href="/consultoria">Consultoria em IA</a>
+      </div>
+    </div>
+    <article class="featured-story">
+      <a href="/artigos/{{ featured.slug }}">
+        <img src="{{ featured.image }}" alt="{{ featured.image_alt }}" />
+        <div>
+          <span class="content-label">{{ featured.category }}</span>
+          <h2>{{ featured.title }}</h2>
+          <p>{{ featured.subtitle }}</p>
+          <small>{{ featured.published_at.strftime('%d/%m/%Y') }} · {{ featured.reading_time }}</small>
+        </div>
+      </a>
+    </article>
+  </section>
+
+  {{ adsense_unit(settings.adsense_top_slot, 'Publicidade', 'horizontal', 'ad-leaderboard') }}
+
+  <section class="section portal-grid" id="ultimas">
+    <div class="section-heading align-left">
+      <p class="eyebrow">Radar</p>
+      <h2>Últimas notícias de IA</h2>
+    </div>
+    <div class="article-grid">
+      {% for article in latest %}
+        {{ article_card(article) }}
+      {% endfor %}
+    </div>
+  </section>
+
+  {{ adsense_unit(settings.adsense_feed_slot, 'Publicidade', 'auto', 'ad-feed') }}
+
+  <section class="section commercial-grid">
+    <a class="commercial-card" href="/anuncie" data-event="advertise_cta_click">
+      <span>Anuncie no portal</span>
+      <strong>Banners, matéria patrocinada, newsletter patrocinada e patrocínio de categoria.</strong>
+    </a>
+    <a class="commercial-card dark" href="/consultoria" data-event="consulting_cta_click">
+      <span>Consultoria em IA</span>
+      <strong>Diagnóstico, treinamentos, automações e projetos de agentes para empresas.</strong>
+    </a>
+  </section>
+
+  <section class="section topic-sections">
+    {% set blocks = [
+      ('IA nos Negócios', business),
+      ('IA na Educação', education),
+      ('IA no Agro', agro),
+      ('Ferramentas de IA', tools),
+      ('Opinião e Análise', opinion)
+    ] %}
+    {% for title, items in blocks %}
+      <div class="topic-row">
+        <div>
+          <h2>{{ title }}</h2>
+          <a href="/categorias/{{ items[0].category_slug if items else 'noticias-de-ia' }}">Ver categoria</a>
+        </div>
+        <div class="article-grid compact">
+          {% for article in items[:3] %}
+            {{ article_card(article) }}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  {{ newsletter_block(message, '/') }}
+
+  <section class="section products-section">
+    <div class="section-heading align-left">
+      <p class="eyebrow">Monetização futura</p>
+      <h2>Produtos digitais e materiais ricos</h2>
+      <p>Estrutura preparada para e-books, cursos, workshops, templates, comunidade e mentorias.</p>
+    </div>
+    <div class="pill-grid">
+      {% for product in products %}
+        <span>{{ product }}</span>
+      {% endfor %}
+    </div>
+  </section>
+
+  {{ cta_consulting() }}
+{% endblock %}

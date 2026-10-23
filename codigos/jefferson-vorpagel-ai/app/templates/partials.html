@@ -1,0 +1,74 @@
+{% macro message_box(message) %}
+  {% if message %}
+    <div class="form-message form-message-{{ message.category }}" role="status">{{ message.text }}</div>
+  {% endif %}
+{% endmacro %}
+
+{% macro article_card(article, modifier='') %}
+  <article class="article-card {{ modifier }}">
+    <a href="/artigos/{{ article.slug }}">
+      <img src="{{ article.image }}" alt="{{ article.image_alt }}" loading="lazy" />
+      <div>
+        <span class="content-label">{{ article.category }}</span>
+        {% if article.sponsored %}<span class="sponsored-label">Conteúdo patrocinado</span>{% endif %}
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.subtitle }}</p>
+        <small>{{ article.published_at.strftime('%d/%m/%Y') }} · {{ article.reading_time }}</small>
+      </div>
+    </a>
+  </article>
+{% endmacro %}
+
+{% macro adsense_unit(slot, label='Publicidade', format='auto', class_name='') %}
+  {% if settings.adsense_client_id and slot %}
+    <div class="adsense-wrap {{ class_name }}" aria-label="{{ label }}">
+      <span>{{ label }}</span>
+      <ins
+        class="adsbygoogle"
+        style="display:block"
+        data-ad-client="{{ settings.adsense_client_id }}"
+        data-ad-slot="{{ slot }}"
+        data-ad-format="{{ format }}"
+        data-full-width-responsive="true"></ins>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro newsletter_block(message=None, origin='/') %}
+  <section class="newsletter-block" id="newsletter" aria-labelledby="newsletter-title">
+    <div>
+      <p class="eyebrow">Newsletter</p>
+      <h2 id="newsletter-title">Receba toda semana as principais notícias de IA traduzidas para negócios, educação, tecnologia e agro.</h2>
+      <p>Curadoria, análise e aplicação prática. Nada de copiar notícia: o foco é contexto, impacto e decisão.</p>
+    </div>
+    <form class="portal-form" action="{{ url_for('newsletter') }}" method="post">
+      {{ message_box(message) }}
+      <input type="hidden" name="origem" value="{{ origin }}" />
+      <label>Nome<input name="nome" type="text" autocomplete="name" required /></label>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required /></label>
+      <label>Área de interesse
+        <select name="area_interesse">
+          <option>IA nos negócios</option>
+          <option>IA na educação</option>
+          <option>IA no agro</option>
+          <option>Ferramentas de IA</option>
+          <option>Automação e agentes</option>
+        </select>
+      </label>
+      <label>Profissão ou segmento<input name="profissao_segmento" type="text" placeholder="Ex.: professor, gestor, analista, produtor rural" /></label>
+      <label class="check-field"><input name="consentimento" value="sim" type="checkbox" required /> Aceito receber comunicações do portal.</label>
+      <button class="button button-primary" type="submit" data-event="newsletter_signup">Assinar newsletter</button>
+    </form>
+  </section>
+{% endmacro %}
+
+{% macro cta_consulting() %}
+  <section class="cta-band">
+    <div>
+      <p class="eyebrow">Consultoria</p>
+      <h2>IA aplicada sem improviso.</h2>
+      <p>Diagnóstico, automação, agentes, treinamento e roadmap para empresas que querem sair do teste solto e criar resultado mensurável.</p>
+    </div>
+    <a class="button button-primary" href="/consultoria" data-event="consulting_cta_click">Ver consultoria</a>
+  </section>
+{% endmacro %}

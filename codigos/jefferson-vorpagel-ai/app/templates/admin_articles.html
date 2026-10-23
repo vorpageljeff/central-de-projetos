@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% set meta_title = 'Editor do Portal | Jefferson Vorpagel AI' %}
+{% set meta_description = 'Painel editorial para revisar, aprovar e publicar noticias de IA.' %}
+
+{% block content %}
+  <section class="admin-shell">
+    <div class="admin-header">
+      <div>
+        <p class="eyebrow">Editor do portal</p>
+        <h1>Noticias e analises</h1>
+        <p>Revise rascunhos, ajuste analise autoral e publique apenas depois da validacao humana.</p>
+      </div>
+      <div class="admin-header-actions">
+        <form action="/admin/robos/noticias" method="post">
+          <button class="button button-secondary" type="submit">Rodar robo agora</button>
+        </form>
+        <a class="button button-primary" href="/admin/artigos/novo">Nova noticia</a>
+      </div>
+    </div>
+
+    <nav class="admin-filters" aria-label="Filtros editoriais">
+      <a class="{{ 'is-active' if not selected_status else '' }}" href="/admin/artigos">Todos</a>
+      {% for status_item in editorial_statuses %}
+        <a class="{{ 'is-active' if selected_status == status_item else '' }}" href="/admin/artigos?editorial_status={{ status_item }}">
+          {{ status_item.replace('-', ' ') }} <span>{{ counters[status_item] }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+
+    <div class="admin-table">
+      {% for article in articles %}
+        <article class="admin-row">
+          <div>
+            <span class="status-pill status-{{ article.editorial_status }}">{{ article.editorial_status.replace('-', ' ') }}</span>
+            {% if article.human_reviewed %}<span class="status-pill reviewed">revisado</span>{% endif %}
+            <h2>{{ article.title or 'Sem titulo' }}</h2>
+            <p>{{ article.subtitle }}</p>
+            <small>{{ article.category }} · {{ article.published_at.strftime('%d/%m/%Y') }} · {{ article.relevance_score }}/100</small>
+          </div>
+          <div class="admin-row-actions">
+            {% if article.editorial_status == 'publicada' %}
+              <a class="button button-secondary" href="/artigos/{{ article.slug }}" target="_blank" rel="noreferrer">Ver</a>
+            {% endif %}
+            <a class="button button-primary" href="/admin/artigos/{{ article.slug }}/editar">Editar</a>
+          </div>
+        </article>
+      {% else %}
+        <div class="empty-state">
+          <h2>Nenhum artigo nesse filtro.</h2>
+          <p>Crie um rascunho ou aguarde o futuro robo editorial preencher essa fila.</p>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{
+  "data": "2026-10-23",
+  "deployment": "dpl_DTEbLfC7srqvt2FoTKBzFZNLQb73",
+  "arquivos": [
+    {
+      "path": "api/index.py",
+      "hash": "f33925a3c84b607f1f9ee100994a0bc500c06bef",
+      "bytes": 20
+    },
+    {
+      "path": "app.py",
+      "hash": "e8f74609437d1d26fe3733faf3370a32673c4a59",
+      "bytes": 749
+    },
+    {
+      "path": "requirements.txt",
+      "hash": "0c7324969b20d37ed91890faaff97a2f83370eda",
+      "bytes": 16
+    },
+    {
+      "path": "static/app.js",
+      "hash": "c5d6eb8f18c30d75c42a0a96cb38cf258f13cea3",
+      "bytes": 2048
+    },
+    {
+      "path": "static/images/apple-touch-icon.png",
+      "hash": "a8c9c55982efece9487a8a7004a4645320785740",
+      "bytes": 6999
+    },
+    {
+      "path": "static/images/favicon-512.png",
+      "hash": "67ed5d599e9d18c163061a2e99bdce284cf6c14d",
+      "bytes": 21753
+    },
+    {
+      "path": "static/images/favicon.ico",
+      "hash": "3ae86d0553f1abc8b4c6625419016a8ccdcc31cb",
+      "bytes": 9516
+    },
+    {
+      "path": "static/images/sil-aula-turma.jpg",
+      "hash": "0201f4c8218342ba70e3c7847bc40890d34bf5fd",
+      "bytes": 1025258
+    },
+    {
+      "path": "static/images/sil-logo.png",
+      "hash": "cf3be7e4a72354e2271c3c4adc1127a4e5177702",
+      "bytes": 46302
+    },
+    {
+      "path": "static/images/sil-retrato-aula.jpg",
+      "hash": "000742744c8220e3ef9408a275890e7c8cddfee5",
+      "bytes": 408367
+    },
+    {
+      "path": "static/style.css",
+      "hash": "e6812fe0d2c256b2b301051457c46c5d5fbd3b1c",
+      "bytes": 18355
+    },
+    {
+      "path": "templates/index.html",
+      "hash": "2fdbdfa96db07ed3434e7e41f1c6b43c4d17ee1c",
+      "bytes": 27072
+    },
+    {
+      "path": "vercel.json",
+      "hash": "1d71494acf3d9d378d21de70cfd5aded99d2ba59",
+      "bytes": 241
+    }
+  ],
+  "verificacao": "SHA-1 de todos os arquivos recuperados coincide com os identificadores do deployment. Logs e funções compiladas não incluídos."
+}

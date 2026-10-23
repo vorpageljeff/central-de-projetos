@@ -1,0 +1,52 @@
+{
+  "data": "2026-10-23",
+  "deployment": "dpl_7pVABX597d7ZyUmsSZphTCvKjQYM",
+  "arquivos": [
+    {
+      "path": "README.md",
+      "hash": "385d06086a57135086ee2ed3840ed96abc0caa85",
+      "bytes": 533
+    },
+    {
+      "path": "app.py",
+      "hash": "7e8db34a03722703f35cc61374339be024c4230b",
+      "bytes": 1097
+    },
+    {
+      "path": "requirements.txt",
+      "hash": "c51ae25e449abaef4ffb47814e80c512e227042f",
+      "bytes": 47
+    },
+    {
+      "path": "static/assets/favicon.svg",
+      "hash": "48102e52abb22ddb79a0519884dbb9119db0fcfc",
+      "bytes": 444
+    },
+    {
+      "path": "static/assets/og-placeholder.svg",
+      "hash": "ad4839005266e34b30d036fb5312607f733f6a3b",
+      "bytes": 818
+    },
+    {
+      "path": "static/script.js",
+      "hash": "9462de7a7dd39f964e65dc7b34365472659aba03",
+      "bytes": 1504
+    },
+    {
+      "path": "static/style.css",
+      "hash": "3d0fe797ff61d2753f937e2e129b3bb0827b37b2",
+      "bytes": 14700
+    },
+    {
+      "path": "templates/index.html",
+      "hash": "2d444459083e969e785db0e55ee68fdfe4051cf0",
+      "bytes": 7628
+    },
+    {
+      "path": "vercel.json",
+      "hash": "0392ed8a90a8d85ebd931c75ca366a6454beff19",
+      "bytes": 179
+    }
+  ],
+  "verificacao": "SHA-1 de todos os arquivos recuperados coincide com os identificadores do deployment. Logs e funções compiladas não incluídos."
+}

@@ -23,6 +23,10 @@ Código-fonte e acervo organizados em **23/10/2026**.
 | bpmn-scripts | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/bpmn-scripts) | 3 |
 | techa-acervo-20260909 | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/techa-acervo-20260909) | 107 |
 
+| sil-sommelier | [Código recuperado da Vercel](codigos/sil-sommelier) | 13 |
+| jefferson-vorpagel-ai | [Código recuperado da Vercel](codigos/jefferson-vorpagel-ai) | 30 |
+| luiza-reis-terapeuta-floral | [Código recuperado da Vercel](codigos/luiza-reis-terapeuta-floral) | 9 |
+
 As branches `acervo-local-20261023` preservam mudanças locais de InnovAgro e Techá sem substituir a main. Os demais destinos acima usam main. Editor Local inclui duas variantes adicionais.
 
 ## Todos os repositórios
@@ -121,18 +125,21 @@ Associações por inventário de fontes, sem alteração ou confirmação do ví
 | techa-admin-portal | [app_mobile_techa](https://github.com/vorpageljeff/app_mobile_techa) |
 | portal-inteligente-de-projetos-maxicon-ai-portal-template | [Portal-inteligente-de-projetos-maxicon_ai_portal_template](https://github.com/vorpageljeff/Portal-inteligente-de-projetos-maxicon_ai_portal_template) |
 | viagem-jj | [viagem-jj](https://github.com/vorpageljeff/viagem-jj) |
-| sil-sommelier | Não localizada |
-| jefferson-vorpagel-ai | Não localizada |
+| sil-sommelier | [Fonte recuperada](codigos/sil-sommelier) |
+| jefferson-vorpagel-ai | [Fonte recuperada](codigos/jefferson-vorpagel-ai) |
 | brand-safari | [brand-safari](https://github.com/vorpageljeff/brand-safari) |
-| luiza-reis-terapeuta-floral | Não localizada |
+| luiza-reis-terapeuta-floral | [Fonte recuperada](codigos/luiza-reis-terapeuta-floral) |
 
 ## Cuidados e pendências
 
 - Revogar a chave Google que estava no histórico de Assistente_de_Compras; a versão atual usa configuração externa.
 - Recuperar a origem do submódulo ReservasMS em Entrega_Prf_Alan.
-- Identificar fontes de sil-sommelier, jefferson-vorpagel-ai e luiza-reis-terapeuta-floral, não localizadas nos arquivos consultados.
 - Transboes_portal_mobile permanece privado para preservar documentos operacionais; código público em transboes-codigo.
 
 Credenciais, arquivos de ambiente locais, sessões do navegador, bancos, dumps e dados de prospecção não integram as novas publicações. Foi feita inspeção de fontes e histórico com padrões de credenciais; ela não garante ausência de todas as vulnerabilidades. As aplicações não foram compiladas ou testadas funcionalmente nesta publicação de acervo.
 
 O GitHub limitou temporariamente a criação de novos repositórios. Os quatro últimos conjuntos de fontes foram organizados em `codigos/` desta central para manter todo o acervo revisado acessível.
+
+## Recuperação da Vercel
+
+Os 52 arquivos de Sil Sommelier, Jefferson Vorpagel AI e Luiza Reis foram recuperados dos deployments existentes. O SHA-1 de cada arquivo foi comparado com seu identificador no deployment. Logs não foram incluídos. Os metadados de recuperação estão nas respectivas pastas.

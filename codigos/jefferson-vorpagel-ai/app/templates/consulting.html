@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% from "partials.html" import message_box with context %}
+{% set meta_title = 'Consultoria em IA para Empresas | Jefferson Vorpagel' %}
+{% set meta_description = 'Consultoria em IA, automação de processos, agentes, treinamentos corporativos e IA aplicada à análise de negócios, projetos, agro e educação.' %}
+
+{% block content %}
+  <section class="page-hero">
+    <p class="eyebrow">Serviços</p>
+    <h1>Consultoria em IA para empresas</h1>
+    <p>Diagnóstico, roadmap e implementação orientada a processos reais, com foco em resultado e adoção segura.</p>
+  </section>
+  <section class="section split-section">
+    <div>
+      <h2>Frentes de atuação</h2>
+      <div class="pill-grid">
+        {% for service in services %}
+          <span>{{ service }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <form class="portal-form light" id="contato" action="{{ url_for('contact') }}" method="post">
+      {{ message_box(message) }}
+      <input type="hidden" name="origem" value="/consultoria" />
+      <label>Nome<input name="nome" type="text" required /></label>
+      <label>E-mail<input name="email" type="email" required /></label>
+      <label>O que sua empresa quer melhorar com IA?<textarea name="mensagem" rows="5" required></textarea></label>
+      <button class="button button-primary" type="submit" data-event="consulting_form_submit">Enviar contato</button>
+    </form>
+  </section>
+{% endblock %}

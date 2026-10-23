@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% from "partials.html" import article_card, newsletter_block, cta_consulting, adsense_unit with context %}
+{% set meta_title = article.meta_title %}
+{% set meta_description = article.meta_description %}
+{% set og_type = 'article' %}
+{% set og_image = article.og_image %}
+{% set schema_json %}
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ article.title }}",
+  "description": "{{ article.meta_description }}",
+  "image": "{{ article.og_image }}",
+  "datePublished": "{{ article.published_at.isoformat() }}",
+  "author": { "@type": "Person", "name": "{{ article.author }}" },
+  "publisher": { "@type": "Organization", "name": "Jefferson Vorpagel AI" }
+}
+{% endset %}
+
+{% block content %}
+  <article class="article-page">
+    <header class="article-header">
+      <a class="content-label" href="/categorias/{{ article.category_slug }}">{{ article.category }}</a>
+      {% if article.sponsored %}<span class="sponsored-label">Conteúdo patrocinado</span>{% endif %}
+      <h1>{{ article.title }}</h1>
+      <p>{{ article.subtitle }}</p>
+      <div class="article-meta">
+        <span>Por {{ article.author }}</span>
+        <span>{{ article.published_at.strftime('%d/%m/%Y') }}</span>
+        <span>{{ article.reading_time }}</span>
+      </div>
+    </header>
+
+    <img class="article-image" src="{{ article.image }}" alt="{{ article.image_alt }}" />
+
+    <div class="article-layout">
+      <aside class="article-sidebar">
+        {{ adsense_unit(settings.adsense_sidebar_slot, 'Publicidade', 'vertical', 'ad-sidebar') }}
+        <div class="source-box">
+          <strong>Fonte original</strong>
+          <span>{{ article.source_name }}</span>
+          <a href="{{ article.source_url }}" target="_blank" rel="noreferrer">Abrir referência</a>
+        </div>
+        <div class="source-box">
+          <strong>Status editorial</strong>
+          <span>{{ article.editorial_status }}</span>
+          <span>Revisão humana: {{ 'sim' if article.human_reviewed else 'não' }}</span>
+          <span>Relevância: {{ article.relevance_score }}/100</span>
+        </div>
+      </aside>
+
+      <div class="article-content">
+        {% if article.affiliate_notice %}
+          <p class="transparency-note">Alguns links podem gerar comissão para o portal, sem custo adicional para você.</p>
+        {% endif %}
+        <section><h2>O que aconteceu</h2><p>{{ article.what_happened }}</p></section>
+        <section><h2>Por que importa</h2><p>{{ article.why_matters }}</p></section>
+        {{ adsense_unit(settings.adsense_article_slot, 'Publicidade', 'auto', 'ad-in-article') }}
+        {% if content_ad %}
+          <a class="ad-box" href="{{ content_ad.target_url }}" data-event="ad_click" data-ad-position="{{ content_ad.position }}">
+            <span>Publicidade</span><strong>{{ content_ad.title }}</strong>
+          </a>
+        {% endif %}
+        <section><h2>Quem será impactado</h2><p>{{ article.who_impacted }}</p></section>
+        <section><h2>Minha análise</h2><p>{{ article.my_analysis }}</p></section>
+        <section>
+          <h2>Como aplicar na prática</h2>
+          <ul>
+            {% for item in article.how_to_apply %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+        <section class="ai-editorial-box">
+          <h2>Arquitetura editorial com IA</h2>
+          <p>Este conteúdo está estruturado para curadoria, resumo e análise original com fonte citada. Nenhum rascunho gerado por IA deve ser publicado sem revisão humana.</p>
+          <dl>
+            <div><dt>Resumo gerado por IA</dt><dd>{{ article.ai_summary }}</dd></div>
+            <div><dt>Categoria sugerida</dt><dd>{{ article.suggested_category }}</dd></div>
+            <div><dt>Público impactado</dt><dd>{{ article.impacted_audience | join(', ') }}</dd></div>
+          </dl>
+        </section>
+        {{ adsense_unit(settings.adsense_article_end_slot, 'Publicidade', 'horizontal', 'ad-article-end') }}
+      </div>
+    </div>
+  </article>
+
+  {{ newsletter_block(message, '/artigos/' ~ article.slug) }}
+  {{ cta_consulting() }}
+
+  <section class="section">
+    <div class="section-heading align-left"><h2>Artigos relacionados</h2></div>
+    <div class="article-grid">
+      {% for item in related %}
+        {{ article_card(item) }}
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}
