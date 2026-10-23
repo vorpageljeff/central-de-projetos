@@ -22,7 +22,6 @@ Código-fonte e acervo organizados em **23/10/2026**.
 | impulso-academy | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/impulso-academy) | 1 |
 | bpmn-scripts | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/bpmn-scripts) | 3 |
 | techa-acervo-20260909 | [Código na central](https://github.com/vorpageljeff/central-de-projetos/tree/main/codigos/techa-acervo-20260909) | 107 |
-
 | sil-sommelier | [Código recuperado da Vercel](codigos/sil-sommelier) | 13 |
 | jefferson-vorpagel-ai | [Código recuperado da Vercel](codigos/jefferson-vorpagel-ai) | 30 |
 | luiza-reis-terapeuta-floral | [Código recuperado da Vercel](codigos/luiza-reis-terapeuta-floral) | 9 |
